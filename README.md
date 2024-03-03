@@ -1,2 +1,2 @@
-"# CSW202-TRAINING" 
-"# CSW202-TRAINING" 
+CSW202 Training 
+Improving my skills on HTML and CSS in native vers.
