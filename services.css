@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Second-section start point */
+
+main .service-container {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 3;
+}
+
+main .service-wrapper {
+    padding: 50px 80px;
+}
+
+main .services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#title-service {
+    color: white;
+    font-size: 50px;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.service-cards {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-top: 75px;
+}
+
+.service-card {
+    height: 490px;
+    width: 370px;
+    background-color: #0048BA;
+    padding: 30px 40px;
+    border: 2.75px solid #fff;
+    border-radius: 13px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    transition: .5s;
+}
+
+.service-card:after {
+    content: "";
+    position: absolute;
+    top: 150%;
+    left: -200px;
+    width: 115%;
+    transform: rotate(45deg);
+    background-color: white;
+    filter: blur(30px);
+    opacity: 0.5;
+    transition: 1s;
+}
+
+.service-card:hover:after{
+    width: 225%;
+    top: -100%;
+}
+
+.service-card img {
+    height: 100px;
+    width: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.service-card h2 {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-weight: 650;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.service-card p {
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+}
+
+.service-card:hover {
+    background-color: #0C4F60;
+    border-color: #ff9d5c;
+    transform: translateY(-10px);
+}
+
+.service-card:hover h2 {
+    color: #ff9d5c;
+}
+
+.service-card:hover p {
+    color: #ff9d5c;
+}
+
+@media screen and (max-width: 1200px){
+    .service-cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 900px){
+    .service-cards {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+}
+/* Second-section end point */
+
+
+body {
+    background: rgba(0, 0, 0, 0.7)url(img/viewMainBackground.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+
+.inner-core {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    min-height: 100vh;
+    background: none;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    padding: 25px 90px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    height: 80px;
+    z-index: 500;
+}
+
+header .weblogo {
+    position: relative;
+    display: flex;
+    padding: 5px 10px 3px;
+} 
+
+header .weblogo img {
+    max-height: 60px;
+}
+
+header .navigation-section a{
+    color: #0085FF;
+    background: none;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 0.75px;
+    padding: 5px 15px;
+    border-radius: 20px;
+}
+
+label {
+    display: none;
+    top: 15px;
+}
+
+#checker {
+    z-index: 3;
+    display: none;
+}
+
+@media (max-width: 1020px){
+    header .navigation-section {
+        display: none;
+    }
+
+    label {
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: 0.25s;
+        transition-property: color;
+    }
+
+    label:hover{
+        color: #0085FF;
+    }
+
+    label .close-btn{
+        display: none;
+    }
+    
+    #checker:checked ~ header .navigation-section {
+        z-index: 2;
+        position: fixed;
+        background: white;
+        opacity: 0.85;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #checker:checked ~ header .navigation-section a{
+        font-weight: 0;
+        margin-bottom: 25px;
+        margin-right: 0px;
+        letter-spacing: 1.25px;
+    }
+
+    #checker:checked ~ header label .close-btn {
+        z-index: 2;
+        display: block;
+        position: fixed;
+    }
+
+    #checker:checked ~ header label .menu-btn {
+        display: none;
+    }
+
+    label .menu-btn {
+        position: relative;
+    }
+
+    header .weblogo {
+        position: relative;
+    }
+}
+
+@media (max-width: 560px){
+    .inner-content .info-content h1 {
+        font-size: 38px;
+        line-height: 55px;
+    }
+
+    .inner-content .info-content p {
+        font-size: 16px;
+        line-height: 25px;
+    }
+}
+
+/* footer design css */
+footer {
+    background-color: #1f1f1f;
+}
+
+.footer-container {
+    width: 100%;
+    padding: 40px 30px 20px;
+}
+
+.additional-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.additional-icons a {
+    text-decoration: none;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 50px;
+    margin: 10px;
+}
+
+.additional-icons a i {
+    font-size: 2.1em;
+    color: #000000;
+    opacity: 85%;
+}
+
+.additional-icons a:hover {
+    background-color: #1f1f1f;
+    transition: 0.45s;
+}
+
+.additional-icons a:hover i {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.footer-navbar {
+    margin: 30px 0;
+}
+
+.footer-navbar ol {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer-navbar ol li a {
+    margin: 22px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+
+.footer-navbar ol li a:hover {
+    opacity: 1;
+}
+
+.footer-copyright {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-copyright p {
+    color: #fff;
+}
+
+.designer {
+    opacity: 0.7;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 400;
+    margin: 0px 4px;
+}
+
+@media (max-width: 720px){
+    .footer-navbar ol {
+        flex-direction: column;
+    }
+
+    .footer-navbar ol li {
+        width: 100%;
+        margin: 12px;
+        text-align: center;
+    }
+}
