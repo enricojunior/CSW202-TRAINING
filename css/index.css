@@ -204,6 +204,21 @@ label {
     }
 }
 
+@media (max-width: 500px){
+    main .inner-content {
+        margin: 90px 50px;
+    }
+
+    main .image-content {
+        align-items: center;
+        justify-content: center;
+    }
+    main .image-content img {
+        height: 200px;
+        width: 200px;
+    }
+}
+
 /* footer design css */
 footer {
     background-color: #1f1f1f;
