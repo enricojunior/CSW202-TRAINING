@@ -1,2 +1,2 @@
-LINK:
+LINK TO THE GITHUB SITE:
 https://github.com/enricojunior/CSW202-TRAINING
