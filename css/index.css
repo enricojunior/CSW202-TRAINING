@@ -57,11 +57,24 @@ header .navigation-section a{
 }
 
 main .inner-content {
-    max-width: 675px;
+    max-width: 1075px;
     margin: 90px 100px;
+    justify-content: space-between;
+    display: flex;
+}
+
+main .image-content {
+    max-width: 400px;
+    padding: 30px 100px;
+}
+
+main .image-content img {
+    height: 325px;
+    width: 325px;
 }
 
 main .inner-content h1 {
+    max-width: 675px;
     color: #FFFFFF;
     font-size: 38px;
     font-weight: 700;
@@ -71,6 +84,7 @@ main .inner-content h1 {
 }
 
 main .inner-content p {
+    max-width: 675px;
     color: #FFFFFF;
     font-size: 16px;
     line-height: 25px;
