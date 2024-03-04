@@ -193,7 +193,6 @@ label {
     .inner-content {
         flex-direction: column-reverse;
     }
-
     main .image-content {
         justify-content: center;
         margin: auto;
@@ -206,16 +205,11 @@ label {
 
 @media (max-width: 500px){
     main .inner-content {
-        margin: 90px 50px;
-    }
-
-    main .image-content {
-        align-items: center;
-        justify-content: center;
+        margin: 90px 40px;
     }
     main .image-content img {
-        height: 200px;
-        width: 200px;
+        height: 180px;
+        width: 180px;
     }
 }
 
