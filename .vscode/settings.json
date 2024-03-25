@@ -2,4 +2,6 @@
     "window.zoomLevel": 0.15,
     "editor.fontSize": 14,
     "editor.wordWrap": "on",
+    "liveServer.settings.multiRootWorkspaceName": "CSW202-TRAINING",
+    "liveServer.settings.port": 5501,
 }

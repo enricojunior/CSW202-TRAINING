@@ -7,12 +7,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: rgba(0, 0, 0, 0.7)url(../img/logo-backgrounds/viewMainBackground.jpg);
-    background-size: cover;
-    background-blend-mode: darken;
-}
-
 .inner-core {
     position: relative;
     width: 100%;
@@ -54,6 +48,12 @@ header .navigation-section a{
     letter-spacing: 0.75px;
     padding: 5px 15px;
     border-radius: 20px;
+}
+
+main {
+    background: rgba(0, 0, 0, 0.7)url(../img/logo-backgrounds/viewMainBackground.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
 }
 
 main .inner-content {
