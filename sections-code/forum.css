@@ -7,6 +7,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background: url(../img/logo-backgrounds/wavy-background.png);
+    background-size: cover;
+}
+
 .forum-wrapper {
     position: relative;
     display: flex;
