@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Exercise Coding System</title>
+    <style>
+        table, th, td {
+            border: 1.5px solid blue;
+            border-collapse: collapse;
+        }
+        th, td {
+            background-color: #e1991d;
+        }
+        .first-table tr th {
+            text-align: right;
+        }
+        .first-table tr td {
+            text-align: right;
+        }
+        .second-table tr td {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- table 1 -->
+    <table border="1" style="width:23.5%" class="first-table">
+        <caption>Tabel 1: Nama Mahasiswa</caption>
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Nim</th>
+            <th>Keterangan</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Milo Padma</td>
+            <td>140003021</td>
+            <td>...............</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Valentino</td>
+            <td>140004021</td>
+            <td>...............</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Meiska</td>
+            <td>140069982</td>
+            <td>...............</td>
+        </tr>
+    </table>
+    <br>
+    <table border="1" style="width:23.5%" class="second-table">
+        <caption>Tabel Konversi Matakuliah</caption>
+        <tr>
+            <td rowspan="2">Pemrograman Visual</td>
+            <td>BIT205</td>
+        </tr>
+        <tr>
+            <td>BIT303</td>
+        </tr>
+        <tr>
+            <td>Bahasa Asing I</td>
+            <td>English II</td>
+        </tr>
+    </table>
+</body>
+</html>
