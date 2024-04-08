@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Form Exercise</title>
+    <style>
+        .btn {
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-right: 5px;
+        }
+        textarea {
+            background: white;
+            min-height: 250px;
+            min-width: 600px;
+            resize: none;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact Us</h1>
+    <form action="test-ctn">
+        <fieldset class="field-set">
+            <legend>Customer Information</legend>
+            <br>
+            <label for="first-name">First Name:</label>
+            <input type="text" name="first-name" id="first-name" required><br><br>
+            <label for="last-name">Last Name:</label>
+            <input type="text" name="last-name" id="last-name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required><br><br>
+        </fieldset>
+        <p>Comments:</p>
+        <textarea name="message" row="4" required></textarea><br><br>
+        <input type="submit" name="contact" class="btn" value="Contact">
+        <input type="reset" name="contact" class="btn" value="Reset">
+    </form>
+</body>
+</html>
