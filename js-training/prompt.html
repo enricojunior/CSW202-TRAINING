@@ -9,6 +9,13 @@
     <script>
         let name = prompt("What's your name?", "");
         document.write("<p>Hello there, " + name + "</p>");
+
+        var confirmed = confirm("Would you like to visit STIKOM Bali website?");
+        if(confirmed){
+            window.location = "https://www.stikom-bali.ac.id/id";
+        } else {
+            alert("Tetap disini ya..");
+        }
     </script>
 </body>
 </html>
