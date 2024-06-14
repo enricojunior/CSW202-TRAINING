@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Form</title>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label>Your Name</label><br>
+        <input type="text" id="name" required><br>
+        <label>Your E-mail</label><br>
+        <input type="email" id="email" required><br>
+        <label>Your Phone</label><br>
+        <input type="text" id="phone" required><br>
+        <hr>
+        <label>Adults</label><br>
+        <input type="text" id="adults" min="1" max="5"><br>
+        <label>Children</label><br>
+        <input type="text" id="children" min="0" max="5"><br><br>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+        function validateForm() {
+            // Retrieving input field values
+            let adults = document.getElementById('adults').value;
+            let children = document.getElementById('children').value;
+
+            children = Number(children);
+            adults = Number(adults);
+
+            // Validation using if-else
+            if(adults == "" || adults < 1){
+                alert("Please enter the number of adults (minimum 1)");
+                return false;
+            } else if(adults > 5){
+                alert("Maximum number of adults allowed is 5");
+                return false;
+            } else {
+                if(children == "" || children < 0){
+                    alert("Please enter the number of children (minimum 0)");
+                    return false;
+                } else if(children > 5){
+                    alert("Maximum number of children allowed is 5");
+                    return false;
+                } else {
+                    return true;
+                }
+            }
+        }
+    </script>
+</body>
+</html>
